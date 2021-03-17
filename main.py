@@ -1,3 +1,4 @@
+#Fishbot FiveM by ReVeR
 from pyautogui import *
 import pyautogui
 from python_imagesearch.imagesearch import *
@@ -68,6 +69,7 @@ while True:
         keyboard.release('e')
         breakpt = 0
         count = count + 1
+        break
 
     font = cv2.FONT_HERSHEY_SIMPLEX
     bottomLeftCornerOfText = (10, 450)

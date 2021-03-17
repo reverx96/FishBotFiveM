@@ -59,17 +59,17 @@ while True:
             coile = 0
             break
 
-    if breakpt > int(dokladnosc):
-        timereduce = (time.time() - start_time)
-        if timereduce<1:
-         timereduce=1
-        time.sleep(6-timereduce)
-        keyboard.press('e')
-        time.sleep(0.1)
-        keyboard.release('e')
-        breakpt = 0
-        count = count + 1
-        break
+        if breakpt > int(dokladnosc):
+            timereduce = (time.time() - start_time)
+            if timereduce<1:
+                timereduce=1
+            time.sleep(6-timereduce)
+            keyboard.press('e')
+            time.sleep(0.1)
+            keyboard.release('e')
+            breakpt = 0
+            count = count + 1
+            break
 
     font = cv2.FONT_HERSHEY_SIMPLEX
     bottomLeftCornerOfText = (10, 450)
